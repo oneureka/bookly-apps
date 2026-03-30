@@ -1,0 +1,57 @@
+{
+  "name": "teahaus",
+  "version": "1.0.0",
+  "private": true,
+  "description": "teahaus",
+  "templateInfo": {
+    "name": "default",
+    "typescript": true,
+    "css": "None",
+    "framework": "Vue3"
+  },
+  "scripts": {
+    "dev:weapp": "npm run build:weapp -- --watch",
+    "build:weapp": "taro build --type weapp",
+    "dev:h5": "npm run build:h5 -- --watch",
+    "build:h5": "taro build --type h5"
+  },
+  "browserslist": {
+    "development": [
+      "defaults and fully supports es6-module",
+      "maintained node versions"
+    ],
+    "production": [
+      "last 3 versions",
+      "Android >= 4.1",
+      "ios >= 8"
+    ]
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.24.4",
+    "@tarojs/components": "4.1.11",
+    "@tarojs/helper": "4.1.11",
+    "@tarojs/plugin-framework-vue3": "4.1.11",
+    "@tarojs/plugin-platform-h5": "4.1.11",
+    "@tarojs/plugin-platform-weapp": "4.1.11",
+    "@tarojs/runtime": "4.1.11",
+    "@tarojs/shared": "4.1.11",
+    "@tarojs/taro": "4.1.11",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.4",
+    "@babel/plugin-transform-class-properties": "7.25.9",
+    "@tarojs/cli": "4.1.11",
+    "@tarojs/plugin-generator": "4.1.11",
+    "@tarojs/vite-runner": "4.1.11",
+    "@types/minimatch": "^5",
+    "@vitejs/plugin-vue": "^4.5.0",
+    "@vitejs/plugin-vue-jsx": "^3.1.0",
+    "babel-preset-taro": "4.1.11",
+    "postcss": "^8.5.6",
+    "prettier": "3.8.1",
+    "terser": "^5.30.4",
+    "typescript": "^5.4.5",
+    "vite": "^4.2.0"
+  }
+}
